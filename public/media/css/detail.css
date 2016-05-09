@@ -1,0 +1,52 @@
+body{
+	color: #333;
+	font-family: 'Microsoft YaHei', Arial, sans-serif;
+	font-size: 13px;
+	width: 100%;
+}
+*{margin:0px;padding:0px;}
+
+.loginContainer{position:fixed;top:0px;left:0px;width:100%;}
+.loginContainer .loginBox{position:relative;display:none;float:left;width:100%;height:378px; background: url(/media/images/homeImages/bg1.png) repeat-x; z-index:999;}
+.loginContainer .loginBox .loginInfo{position:relative;margin:30px auto 0;width:372px; height:47px; display:none;}
+.loginContainer .loginBox .loginInfo input{position:absolute;left:47px;top:5px;border:0px; background-color:#aae6f8;width:310px;height:36px;line-height:36px; font-size:20px; color:#192e36;}
+.loginContainer .loginBox .loginInfo .loginSumbmitBtn{width:176px; height:57px; background:url(/media/images/homeImages/loginSubmitBtn.png) no-repeat; cursor:pointer; }
+.loginContainer .loginOpenBox{position:relative;float:right;width:100px;height:110px;margin:-13px 0; z-index:999;}
+.loginContainer .loginOpenBox .loginOpenBtn{position:absolute;top:0px;right:10px; cursor:pointer;padding:0 10px;}
+@keyframes icon_mod_rock{0%{transform:rotate(0deg)}25%{transform:rotate(-10deg)}50%{transform:rotate(0deg)}75%{transform:rotate(10deg)}100%{transform:rotate(0deg)}}
+@-webkit-keyframes icon_mod_rock{0%{-webkit-transform:rotate(0deg)}25%{-webkit-transform:rotate(-10deg)}50%{-webkit-transform:rotate(0deg)}75%{-webkit-transform:rotate(10deg)}100%{-webkit-transform:rotate(0deg)}}
+@-moz-keyframes icon_mod_rock{0%{-moz-transform:rotate(0deg)}25%{-moz-transform:rotate(-10deg)}50%{-moz-transform:rotate(0deg)}75%{-moz-transform:rotate(10deg)}100%{-moz-transform:rotate(0deg)}}
+.loginContainer .loginOpenBox .loginOpenBtn:hover{-webkit-animation:icon_mod_rock 2s linear infinite;-moz-animation:icon_mod_rock 2s linear infinite;animation:icon_mod_rock 2s linear infinite;-webkit-transform-origin:90% 0;-moz-transform-origin:90% 0;transform-origin:90% 0;}
+
+.leftContainer{position:fixed;top:50%;left:10px;margin-top:-230px;width:177px; z-index:99;}
+.leftContainer .leftBtnBox{ position:relative;float:left;width:173px;padding-left:2px;height:70px; overflow:hidden;}
+.leftContainer .leftBtnBox a{font-size: 18px;font-family: "Microsoft YaHei";color:#f6f3ee;text-shadow:1px 1px 3px #000;text-decoration: none;}
+.leftContainer .leftBtnBox .toBtnBg{ position:absolute;top:1px; left:0px;z-index:101;}
+.leftContainer .leftBtnBox .toBtn{  position:absolute;background: url(/media/images/homeImages/toBtnBg2.png) no-repeat;width:130px;height:65px;line-height:65px;left:-100px;text-align:center;z-index:100;}
+
+.mainContainers{position:relative;width:100%;}
+.container{position:relative;width:100%;}
+#bigLogoBoat{position:fixed;bottom:40px;left:50%;margin-left:-140px;z-index:4;}
+#container1{background-color: #5dcbf8;height:997px;}
+#container1 .bigLogoDiv{position:relative;width:980px;height:757px; top:250px;margin:0 auto 0; background:url(/media/images/homeImages/bigLogobg.png) no-repeat 100px 0px;z-index:1;}
+#container1 .bigLogoImg2{position:absolute;bottom:290px;left:50%; margin-left:-220px;z-index:6;}
+.haiDiv{position:absolute;bottom:0px;left:0px;width:100%;height:186px;background:url(/media/images/homeImages/bigLogo1.png) repeat-x bottom;z-index:6;}
+
+#container2{height:586px;box-shadow:2px 2px 5px #000; z-index:5;background:rgba(219,233,230,0.9); filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#dbe9e6,endcolorstr=#dbe9e6);}
+#container2 .contain2bg{position:relative;width:980px;height:586px; margin:0 auto; left:-180px;background:url(/media/images/homeImages/contain2_1.png) no-repeat left bottom;}
+#container2 .contain2Info{position:absolute; bottom:100px; left:845px; width:220px;}
+
+
+#container3{height:600px;background:#b75839;}
+#container3 .contain3Div{position:relative;width:980px;height:100%; margin:0 auto;background:url(/media/images/homeImages/contain3_2.png) no-repeat 383px 376px;}
+
+
+#container4{height:586px;box-shadow:2px 2px 5px #000; z-index:5;background:rgba(54,72,87,0.9); filter:progid:DXImageTransform.Microsoft.gradient(startcolorstr=#364857,endcolorstr=#364857);}
+#container4 .contain4bg{position:relative;width:980px;height:586px;margin:0 auto;background:url(/media/images/homeImages/contain4_1.png) no-repeat right bottom;}
+#container4 .contain4Info{position:absolute; bottom:150px; left:30px; width:220px; color:#fff;}
+
+
+#container5{height:1080px;background:#c15954;}
+#container5 .contain5Div{position:relative;width:980px;height:100%; margin:0 auto;}
+
+

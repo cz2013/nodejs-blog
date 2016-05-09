@@ -1,0 +1,26 @@
+<%- include header %>
+<div class="title"><%= title %></div>
+<div class="content" role="main">
+  <div class="posts">
+    <% posts.forEach(function (post) { %>
+      <div class="post-teaser">
+        <header>
+          <h1>
+            <a class="post-link" href="/p/<%= post._id %>"><%= post.title %></a>
+          </h1>
+          <p class="meta">
+            <%= post.name %> | <%= post.time %>
+          </p>
+        </header>
+        <div class="excerpt">
+          <%- post.content %>
+          <a class="readMore" href="/p/<%= post._id %>">
+            进入阅读
+          </a>
+        </div>
+      </div>
+    <% }) %>
+  </div>
+  <%- include paging %>
+</div>
+<%- include footer %>

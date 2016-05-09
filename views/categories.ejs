@@ -1,0 +1,19 @@
+
+
+<%- include header %>
+<div class="title"><%= title %></div>
+<div class="content" role="main">
+  <ul class="listing">
+  <% var lastYear = 0 %>
+  <% posts.forEach(function (post) { %>
+    <% var curYear = +post.time.split('-')[0] %>
+    <% if (lastYear != curYear) { %>
+      <li class="listing-item">
+        <time datetime="<%= post.time %>"><%= post.time %></time>
+        <a href="/p/<%= post._id %>" title="{{ post.title }}"><%= post.title %></a>
+      </li>
+      <% lastYear = curYear %>
+    <% } %>
+  <% }) %>
+  </ul>
+</div>

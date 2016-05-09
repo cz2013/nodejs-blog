@@ -1,0 +1,13 @@
+<div id="post-pagination" class="paginator">
+  <% if (isFirstPage) { %>
+    <a href="javascript:void(0)" class="prev disabled">上一页</a>
+  <% }else{ %>
+    <a href="?p=<%= page-1 %>" class="prev">上一页</a>
+  <% } %>
+
+  <% if (isLastPage) { %>
+  	<a href="javascript:void(0)" class="next disabled" >下一页</a>
+  <% } else{%>
+  <a class="next" href="?p=<%= page+1 %>">下一页</a>
+  <% } %>
+</div>
